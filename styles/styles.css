@@ -1,0 +1,218 @@
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --hover-cyan: hsla(171, 66%, 50%);
+    --light-blue: hsl(233, 100%, 69%);
+    --hover-blue: hsl(233, 100%, 75%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%)
+}
+body {
+    font-size: 1.125rem; /* 18px */
+    padding: 0;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1 {
+    font-weight: bolder;
+}
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: lighter;
+}
+p {
+    color:hsl(210, 10%, 33%);
+}
+
+#intro {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7.6875rem 1.9375rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.button-ios {
+    text-decoration: none;
+    border-color: hsl(171, 66%, 35%);
+    border-style: solid;
+    background-color: var(--strong-cyan);
+    color: #fff;
+    border-width: 0 2px 2px 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 22px;
+}
+.button-ios:hover {
+    border-color: var(--hover-cyan);
+    background-color: var(--hover-cyan);
+}
+.button-mac {
+    text-decoration: none;
+    border-color: hsl(233, 100%, 62%);
+    border-style: solid;
+    background-color: var(--light-blue);
+    color: #fff;
+    border-width: 0 2px 2px 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.button-mac:hover {
+    border-color: var(--hover-blue);
+    background-color: var(--hover-blue);
+}
+.button-section {
+    display: flex;
+    flex-direction: column;
+    margin: 2.2rem auto;
+}
+
+
+#feature1 {
+    text-align: center;
+    padding: 4.5625rem 1.9375rem;
+}
+.feature-image {
+    width: 95%;
+    margin-top: 60px; 
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#feature2 {
+    padding: 4.5625rem 1.9375rem;
+    text-align: center;
+}
+
+#feature3 {
+    text-align: center;
+    margin: 40px auto 60px;
+}
+.feature-box {
+    margin: 2rem 0;
+}
+
+.org-image {
+    width: 30%;
+    height: 30%;
+    margin: 2.5rem auto;
+}
+
+#feature4 {
+    text-align: center;
+    padding: 4.5625rem 1.9375rem 8.2rem;
+}
+
+
+footer {
+   background-color: hsl(0, 0%, 93%); 
+   text-align: center;
+   padding: 2rem 0;
+}
+
+.footer-logo {
+    width: 15%;
+    margin: 20px auto;
+}
+.footer-links {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    line-height: 3;
+}
+.footer-links:hover {
+    color: var(--strong-cyan);
+}
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    margin: 1rem 0.7rem;
+    text-decoration: none;
+}
+.social-icon:hover {
+    filter: saturate(60);
+}
+    
+
+
+@media (min-width: 1440px) {
+    #intro {
+        background-image: url("../images/bg-header-desktop.png");
+        background-size: 100%;
+    }
+    .container {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .flex-container {
+        flex-direction: row;
+    }
+    .button-section {
+        flex-direction: row;
+        justify-content:space-between;
+        width: 59%;
+        
+    }
+    .button-ios {
+        margin-bottom: 0;
+        padding: 15px;
+    }
+    .button-mac {
+        padding: 15px;
+    }
+    .feature-image {
+        width: 50%;
+    }
+    .sub-features {
+        width: 26%;
+        margin: auto 50px auto 150px;
+        text-align: left;
+    }
+    .feature-box {
+        width: 23%;
+    }
+    .feature-container {
+        justify-content: space-between;
+        padding: 20px 156px;
+    }
+    .org-image {
+        width: 30%;
+        height: 30%;
+        margin: 80px 55px 30px;
+    }
+
+    .footer-logo {
+        width: 3%;
+        height: 3%;
+        margin: 30px 5px 30px 36px;
+    }
+    .footer-container {
+        justify-content: space-evenly;
+    }
+    .footer-links-container {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 27%;
+        margin: 0 20px;;
+        text-align: left;
+    }
+    .footer-links {
+        margin: 15px;
+    }
+
+}
+
+
